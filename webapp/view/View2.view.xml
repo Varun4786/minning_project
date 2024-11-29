@@ -1,0 +1,40 @@
+<mvc:View controllerName="app.minningreport.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page2" title="{i18n>title1}">
+        <content>
+            <VBox>
+                <!-- Create a SimpleForm to display the drill information -->
+                <f:SimpleForm editable="false" layout="ResponsiveGridLayout">
+                    <Label text="Drill ID" />
+                    <Text text="{miningModel>/Drill_ID}" />
+
+                    <Label text="Location ID" />
+                    <Text text="{miningModel>/Location_ID}" />
+
+                    <Label text="Mineral Type" />
+                    <Text text="{miningModel>/Mineral_Type}" />
+
+                    <Label text="Number of Drills" />
+                    <Text text="{miningModel>/Drill_Count}" />
+
+                     <Label text="Total cost" />
+                    <Text text="{miningModel>/Total_Cost}" />
+
+                   
+
+                     <Label text="Man_Days" />
+                    <Text text="{miningModel>/Man_Days}" />
+
+
+                    <Label text="Probability_of_Positive_Outcome" />
+                    <Text text="{miningModel>/Probability_of_Positive_Outcome}" />
+
+
+
+                </f:SimpleForm>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
